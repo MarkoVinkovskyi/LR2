@@ -1,4 +1,3 @@
 num=int(input())
-binary=(bin(num))
-a = str(binary)
+a = str(bin(num))
 print(a[1:].count('1'))
