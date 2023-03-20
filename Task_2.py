@@ -1,4 +1,4 @@
 num=int(input())
-binary=(bin(abs(num)))
+binary=(bin(num))
 a = str(binary)
-print(a.count('0'))
+print(a[1:].count('0'))
