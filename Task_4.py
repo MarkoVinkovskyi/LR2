@@ -1,6 +1,6 @@
 K=int(input())
-sum=0
-i=999
-for i in range(K, 10000, K):
-    sum =sum+i
+max_num = (9999 // K) * K
+min_num = K - (1000 % K) + 1000
+n = (max_num - min_num) // K + 1
+sum = (min_num + max_num) * n // 2
 print(sum)
