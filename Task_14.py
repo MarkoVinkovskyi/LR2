@@ -9,4 +9,4 @@ while 1:
       l=1
    elif n == 0 and l == 1:
        break
-print((k))
+print(k)
