@@ -4,6 +4,7 @@ while 1:
    n =int(input())
    if n != 0:
       k = k+n
+      l = 0
    elif n == 0 and l == 0:
       l=1
    elif n == 0 and l == 1:
