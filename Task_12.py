@@ -1,11 +1,7 @@
-c=0
-k=0
-while 1:
-   n =int(input())
-   if n != 0:
-      if abs(n)>abs(k):
-         c = n
-      k = n
-   elif n == 0:
-      break
+c=-1002
+number = int(input())
+while number != 0:
+    if c<number:
+       c=number
+    number = int(input())
 print(c)
