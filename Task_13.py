@@ -1,7 +1,7 @@
-c=0
+c=-1002
 number = int(input())
 while number != 0:
-    if abs(c)<abs(number):
+    if c<number:
        c=number
     number = int(input())
 print(c)
