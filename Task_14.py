@@ -10,3 +10,4 @@ while 1:
    elif n == 0 and l == 1:
        break
 print(k)
+
