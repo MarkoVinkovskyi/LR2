@@ -1,16 +1,15 @@
-x = float(input())
-eps = 1e-6
-n = 1
-sum_n = 1.0
-# ищем максимальное n, при котором сумма меньше x
-while sum_n - x < eps:
-    n += 1
-    sum_n += 1.0 / n
-m = 1
-sum_m = 1.0
-# ищем минимальное m, при котором сумма больше x
-while x - sum_m > eps:
-    m += 1
-    sum_m += 1.0 / m
-# выводим результаты
-print(n - 1, m)
+X = float(input())
+M=0
+N=0
+K=0
+while K < X:
+   N = N + 1
+   K=K+(1/N)
+M=N
+while 1:
+   if K<=X:
+      M = M + 1
+      K = K + (1 / M)
+   else:
+      break
+print((N-1),(M))
