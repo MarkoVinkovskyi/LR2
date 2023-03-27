@@ -1,12 +1,8 @@
-def sum(num):
-    if num.startswith('-'):
-        sign = -1
-        num = num[1:]
+def sum_of_digits(n):
+    n=abs(n)
+    if n < 10:
+        return n
     else:
-        sign = 1
-    sum_of_digits=0
-    for digit in num:
-        sum_of_digits += int(digit)
-    return sum_of_digits
-number = input()
-print(sum(number))
+        return n % 10 + sum_of_digits(n // 10)
+number = int(input())
+print(sum_of_digits(number))
