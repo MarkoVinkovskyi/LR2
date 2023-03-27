@@ -1,6 +1,11 @@
+
+def day_when_runner_will_reach_goal(n, x):
+    distance = n
+    day_count = 1
+    while distance < x:
+        distance *= 1.1
+        day_count += 1
+    return day_count
 N,X=map(int,input().split())
-c=1
-while N<X:
-    N=N+0.1*N
-    c +=1
-print(c)
+print(day_when_runner_will_reach_goal(N, X))
+
