@@ -1,3 +1,4 @@
+num=int(input())
 def count_zeros_in_binary(n):
     binary_str = bin(n)[2:]
     zero_count = binary_str.count('0')
