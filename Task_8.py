@@ -3,6 +3,7 @@ M=0
 N=0
 K=0
 eps=1e-6
+
 while K < X-eps:
    N = N + 1
    K=K+(1/N)

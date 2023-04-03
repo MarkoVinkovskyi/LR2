@@ -9,3 +9,6 @@ def f(num):
     return a+str(m)
 number = int(input())
 print(f(number))
+
+
+

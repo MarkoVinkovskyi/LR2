@@ -6,3 +6,5 @@ while 1:
    elif n == 0:
       break
 print(c)
+
+

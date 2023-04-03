@@ -1,6 +1,3 @@
 K = int(input())
-sum = 0
-for num in range(K, 10000, K):
-    if num>999:
-        sum += num
-print(sum)
+Total = list(filter(lambda K: K > 999, range(K, 10000, K)))
+print(sum(Total))
